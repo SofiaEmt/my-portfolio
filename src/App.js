@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import Email from "./Pages/Email";
+import "./Styles/normalize.css";
+import "./Styles/main.css";
+import "react-icons";
+import WorkoutGenerator from "./Pages/WorkoutGenerator";
+import GHChuck from "./Pages/GHChuck";
+import TheHills from "./Pages/TheHills";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/email" element={<Email />} />
+        <Route path="/workout-generator" element={<WorkoutGenerator />} />
+        <Route path="/good-luck-chuck" element={<GHChuck />} />
+        <Route path="/the-hills" element={<TheHills />} />
+      </Routes>
+    </>
   );
 }
 
