@@ -219,7 +219,6 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 8vw;
   border-radius: 6px;
   font-family: var(--title-font) !important;
   font-size: 12px;

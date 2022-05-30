@@ -11,7 +11,7 @@ const Nav = () => (
     <section className="navbar">
         <div className="vertical-line"></div>
         <Link to="/email"><div className="navbar-icons navbar-icons--mail"><MdContactMail />
-            <div className="tooltiptext"><p>click me!</p></div>
+            <div className="tooltiptext"><p>sofia.emteryd@gmail.com</p></div>
         </div></Link>
         <a href="https://github.com/SofiaEmt" target="_blank"><GoMarkGithub className="navbar-icons" /></a>
         <a href="https://linkedin.com/in/sofia-emteryd" target="_blank"><BsLinkedin className="navbar-icons" /></a>
