@@ -415,7 +415,7 @@ p {
         }
 
         @media screen and (max-width: 414px){
-            padding-bottom: 45vw;
+            padding-bottom: 6vw;
         }
 
         img {
@@ -503,6 +503,11 @@ p {
                 width: 100%;
                 margin: 0;
             }
+
+            @media screen and (max-width: 414px){
+                width: 130%;
+                margin-left: -2.2em;
+            }
         }
 
         svg {
@@ -515,6 +520,10 @@ p {
             @media screen and (max-width: 780px){
                 left: 50vw;
                 width: 40%;
+            }
+
+            @media screen and (max-width: 414px){
+                width: 45%;
             }
         }
 
