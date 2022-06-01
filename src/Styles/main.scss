@@ -6,7 +6,7 @@
     font-family: 'Space Mono', monospace;
 
     --background: #f9f5f4;//#190E4F;//#6b9bd1;//
-    --orange: #1B998B;//#CEFF1A;//#DAFF54;//#F34213;
+    --orange: #25b8a6;//#CEFF1A;//#DAFF54;//#F34213;
     --white: #191617;//#FDFFFC;
     --portfolio-bg: #1D1736;
     --link-hover: #A6CFD5;
@@ -76,6 +76,7 @@ h4 {
     line-height: 1.2em;
 }
 
+
 h5 {
     font-weight: 400;
     font-family: var(--main-font);
@@ -99,8 +100,12 @@ a:hover {
     cursor: pointer;
 }
 
+p {
+    line-height: 1.3em;
+}
+
 .p-margin-up {
-    margin-top: 1em;
+    margin-top: .8em;
 
     @media screen and (max-width: 1100px){
         margin-top: 2em !important;
@@ -222,6 +227,10 @@ a:hover {
     
 }
 
+.about {
+
+}
+
 
 .top-banner-wrapper {
     display: flex;
@@ -266,6 +275,24 @@ a:hover {
         padding-right: 3vw;
     }
 
+    .picture-and-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+    }
+
+    img {
+        width: 4vw;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .profile-pic {
+        
+        
+    }
+
 /*     .line {
         margin: 1em 1em .5em .5em;
         width: 100%;
@@ -284,18 +311,19 @@ a:hover {
     flex-direction: row;
     //background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FF312EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     //background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23E5E5E5FF' stroke-width='2' stroke-dasharray='10' stroke-dashoffset='4' stroke-linecap='square'/%3e%3c/svg%3e");
-    height: 50vh;
+    height: 52vh;
 
     //padding-left: 1.5vw;
 
     position: relative;
     left: -1.4vw;
+    z-index: 50;
 
     width: 105%;
     overflow-x: hidden;
 
-    @media screen and (max-width: 900px){
-        height: 60vh;
+    @media screen and (max-width: 1000px){
+        height: auto;
     }
 
     h3 {
@@ -307,8 +335,8 @@ a:hover {
 
     @media screen and (max-width: 780px) {
         flex-direction: column;
+        align-items: center;
         height: auto;
-        width: 100vw;
         background-image: none;
         overflow: hidden;
     }
@@ -364,19 +392,24 @@ a:hover {
     .bottom-banner-left {
         width: 50%;
         //border: 1px dashed white;
-        padding: 4.5vw 6vw 20vw 5.6vw;  
-        background-color: #F9F5F4;
+        padding: 4.5vw 6vw 10vw 5.6vw;  
+        background-color: var(--background);
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FF312EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
         //background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FF312EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-        
+    
+
         @media screen and (max-width: 780px){
             background-image: none;
             width: 90%;
             flex-direction: column;
+        
         }
 
         @media screen and (max-width: 720px){
-            padding: 6vw 6vw 25vw 5vw;
+            padding: 6vw 6vw 6vw 5vw;
             width: 100%;
             background-image: none;
         }
@@ -384,6 +417,19 @@ a:hover {
         @media screen and (max-width: 414px){
             padding-bottom: 45vw;
         }
+
+        img {
+            width: 4vw;
+            height: 4vw;
+            border-radius: 8px;
+
+            margin-top: .3em;
+
+            @media screen and (max-width: 780px){
+                display: none;
+            }
+        }
+
     }
 
     .code-types-i-know {
@@ -414,18 +460,67 @@ a:hover {
 
     .bottom-banner-right {
         //border: 1px solid white;
-        background-color: #F9F5F4;
+        background-color: var(--background);
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FF312EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
         //background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FF312EFF' stroke-width='4' stroke-dasharray='6%2c 10' stroke-dashoffset='2' stroke-linecap='square'/%3e%3c/svg%3e");
         //background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23E5E5E5FF' stroke-width='2' stroke-dasharray='10' stroke-dashoffset='2' stroke-linecap='square'/%3e%3c/svg%3e");
         display: flex;
-        align-items: flex-start;
+        align-items: center;
 
         position: relative;
-        z-index: -1;
+        z-index: 50;
         left: -2em;
         padding-right: 10vw;
+        width: 80%;
 
+        @media screen and (max-width: 1000px){
+            width: 65vw;
+        }
+
+        .img-container {
+            display: flex;
+            position: relative;
+            
+        }
+
+        img {
+            width: 30em;
+            height: auto;
+
+            margin: 0em 0em 0em 4em;
+            align-self: center;
+
+            border-radius: 8px;
+            position: relative;
+
+            @media screen and (max-width: 1000px){
+                margin-top: 3em;
+                width: calc(30em - 5vw);
+                margin-top: -1em;
+            }
+
+            @media screen and (max-width: 780px){
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        svg {
+            position: absolute;
+            left:30em;
+            top: -5em;
+
+            overflow: visible !important;
+
+            @media screen and (max-width: 780px){
+                left: 50vw;
+                width: 40%;
+            }
+        }
+
+
+
+        
         
 
 
