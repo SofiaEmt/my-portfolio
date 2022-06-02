@@ -352,7 +352,6 @@ p {
   left: -1.4vw;
   z-index: 50;
   width: 105%;
-  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1000px) {
@@ -526,6 +525,53 @@ p {
   }
 }
 
+.bottom-banner svg {
+  position: absolute;
+  left: 30em;
+  top: -5em;
+  overflow: visible !important;
+}
+
+@media screen and (max-width: 1050px) {
+  .bottom-banner svg {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .bottom-banner svg {
+    left: 50vw;
+    width: 40%;
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bottom-banner svg {
+    width: 45%;
+  }
+}
+
+.bottom-banner .flipped-svg {
+  visibility: hidden;
+  position: absolute;
+  left: 18em;
+  top: -8em;
+  overflow: visible !important;
+}
+
+@media screen and (max-width: 1050px) {
+  .bottom-banner .flipped-svg {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .bottom-banner .flipped-svg {
+    visibility: hidden;
+  }
+}
+
 .bottom-banner .bottom-banner-right {
   background-color: var(--background);
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FF312EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
@@ -585,26 +631,6 @@ p {
   .bottom-banner .bottom-banner-right img {
     width: 130%;
     margin-left: -2.2em;
-  }
-}
-
-.bottom-banner .bottom-banner-right svg {
-  position: absolute;
-  left: 30em;
-  top: -5em;
-  overflow: visible !important;
-}
-
-@media screen and (max-width: 780px) {
-  .bottom-banner .bottom-banner-right svg {
-    left: 50vw;
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .bottom-banner .bottom-banner-right svg {
-    width: 45%;
   }
 }
 
@@ -1527,6 +1553,25 @@ p {
   }
 }
 
+@media screen and (max-width: 414px) {
+  .faded-background-container .pop-up-display {
+    width: 80%;
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .faded-background-container .pop-up-display h3 {
+    font-size: 1.2em !important;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .faded-background-container .pop-up-display h3 {
+    font-size: .9em !important;
+  }
+}
+
 .faded-background-container .pop-up-display .pop-up-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1557,6 +1602,12 @@ p {
   transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+@media screen and (max-width: 414px) {
+  .faded-background-container .pop-up-display .pop-up-content .btn {
+    margin-top: 1em !important;
+  }
 }
 
 .faded-background-container .pop-up-display .pop-up-content .btn:hover {
