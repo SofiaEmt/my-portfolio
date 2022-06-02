@@ -1,4 +1,3 @@
-import { FaShuttleVan } from "react-icons/fa";
 import Nav from "./Nav";
 
 const TopBanner = () => {
@@ -11,7 +10,7 @@ const TopBanner = () => {
                 <section className="top-banner">
                     <h4>Hello, </h4>
                     {/* <div className="input-text"> */}
-                    <h1 className="word">my name is Sofia
+                    <h1>my name is Sofia
                         {/* <span className="one"> S</span>
                         <span className="one">o</span>
                         <span className="one">f</span>

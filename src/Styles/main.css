@@ -4,7 +4,7 @@
   font-family: 'DM Sans', sans-serif;
   font-family: 'Space Mono', monospace;
   --background: #f9f5f4;
-  --orange: #25b8a6;
+  --title-color: #1B998B;
   --white: #191617;
   --portfolio-bg: #1D1736;
   --link-hover: #A6CFD5;
@@ -33,7 +33,7 @@ body {
 
 h1 {
   font-family: var(--title-font);
-  color: var(--orange);
+  color: var(--title-color);
   font-weight: 400;
   font-size: 5em !important;
   margin: 0.1em 0em 0.3em 0.1em !important;
@@ -42,14 +42,14 @@ h1 {
 
 h2 {
   font-family: var(--title-font);
-  color: var(--orange);
+  color: var(--title-color);
   font-weight: 400;
   font-size: 3em !important;
   width: 100% !important;
 }
 
 h3 {
-  color: var(--orange);
+  color: var(--title-color);
   font-family: var(--title-font);
   font-weight: 300;
   font-size: 2em !important;
@@ -1251,7 +1251,7 @@ p {
 }
 
 .portfolio-content .git-btn:hover {
-  background: var(--orange);
+  background: var(--title-color);
 }
 
 .portfolio-content .bottom-banner {
@@ -1403,7 +1403,7 @@ p {
 }
 
 .portfolio-content .tool-banner .what-links a {
-  color: var(--orange);
+  color: var(--title-color);
   text-decoration: none;
 }
 
@@ -1431,7 +1431,7 @@ p {
           flex-direction: row;
   font-size: calc(15px + 2vw);
   padding: 2vw 0vw 4vw 4vw;
-  color: var(--orange);
+  color: var(--title-color);
   gap: .5em;
 }
 
@@ -1460,10 +1460,6 @@ p {
 .input-text {
     width: 50vw;
 } */
-.word {
-  font-family: var(--title-font) !important;
-}
-
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 20px #9fc028;
@@ -1472,7 +1468,6 @@ p {
     text-shadow: 0 0 30px #c6f322, 0 0 20px #8ba03d;
   }
 }
-
 @keyframes glow {
   from {
     text-shadow: 0 0 20px #9fc028;
@@ -1633,7 +1628,7 @@ p {
 }
 
 .faded-background-container .close-button:hover {
-  color: var(--orange);
+  color: var(--title-color);
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }

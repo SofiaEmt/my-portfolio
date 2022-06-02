@@ -2,8 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-
-
 function EmailPopUp() {
 
     const [popUpHidden, setPopUpHidden] = useState("false");

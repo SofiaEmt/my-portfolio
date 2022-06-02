@@ -1,7 +1,6 @@
 
 import WgPageBottom from "./WgPageBottom";
 import WgPageTop from "./WgPageTop";
-import PortfolioNav from "./../PortfolioNav";
 
 import { useEffect } from "react";
 

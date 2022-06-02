@@ -1,6 +1,4 @@
 import React from 'react'
-import { SiHtml5 } from "react-icons/si";
-import { SiSass } from 'react-icons/si';
 import { SiJavascript } from 'react-icons/si';
 import { Link } from 'react-router-dom';
 
