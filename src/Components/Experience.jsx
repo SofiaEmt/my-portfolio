@@ -1,5 +1,3 @@
-import Nav from "./Nav";
-
 
 const Experience = () => (
     <section className="wrapper wrapper--education">
@@ -8,7 +6,7 @@ const Experience = () => (
 
             <div className="paragraph">
                 <p className="p-bold">Diverse client briefs with delivery,
-                    design lead, Scrum Master, collaboration and lots of CODING!</p>
+                    design lead, Scrum master, collaboration, teamwork and lots of coding!</p>
                 <p className="p-orange">Hyper Island, Stockholm</p>
             </div>
 
@@ -25,7 +23,7 @@ const Experience = () => (
 
         <div className="dashed-border">
             <h4>as well as...</h4>
-            <p>Experience as a design lead & scrum master.</p>
+            <p>quite the fun co-worker!</p>
         </div>
 
         {/* <div className="line"></div> */}

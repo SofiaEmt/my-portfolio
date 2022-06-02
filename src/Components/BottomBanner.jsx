@@ -1,5 +1,4 @@
 import React from 'react'
-import { FaShuttleVan } from "react-icons/fa";
 
 function BottomBanner() {
     return (

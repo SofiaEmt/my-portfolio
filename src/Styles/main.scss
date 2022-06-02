@@ -6,7 +6,7 @@
     font-family: 'Space Mono', monospace;
 
     --background: #f9f5f4;//#190E4F;//#6b9bd1;//
-    --orange: #25b8a6;//#CEFF1A;//#DAFF54;//#F34213;
+    --title-color: #1B998B;//#25b8a6;//#CEFF1A;//#DAFF54;//#F34213;
     --white: #191617;//#FDFFFC;
     --portfolio-bg: #1D1736;
     --link-hover: #A6CFD5;
@@ -42,7 +42,7 @@ body {
 
 h1 {
     font-family: var(--title-font);
-    color: var(--orange);
+    color: var(--title-color);
     font-weight: 400;
     font-size: 5em !important;
     margin: 0.1em 0em 0.3em 0.1em !important;
@@ -52,7 +52,7 @@ h1 {
 
 h2 {
     font-family: var(--title-font);
-    color: var(--orange);
+    color: var(--title-color);
     font-weight: 400;
     font-size: 3em !important;
     width: 100% !important;
@@ -64,7 +64,7 @@ h2:hover {
 } ///FIX SO ITS a:hover INSTEAD!!!
 
 h3 {
-    color: var(--orange);
+    color: var(--title-color);
     font-family: var(--title-font);
     font-weight: 300;
     font-size: 2em !important;
@@ -1057,7 +1057,7 @@ p {
       }
 
       .git-btn:hover {
-          background: var(--orange);
+          background: var(--title-color);
       } 
 
       .bottom-banner {
@@ -1154,7 +1154,7 @@ p {
         }
 
         a {
-            color: var(--orange);
+            color: var(--title-color);
             text-decoration: none;
         }
 
@@ -1176,7 +1176,7 @@ p {
         font-size: calc(15px + 2vw);
         padding: 2vw 0vw 4vw 4vw;
 
-        color: var(--orange);
+        color: var(--title-color);
 
         gap: .5em;
 
@@ -1209,11 +1209,6 @@ p {
     width: 50vw;
 } */
 
-.word {
-    //animation: glow 1.5s ease-in-out infinite alternate;
-    font-family: var(--title-font) !important;
-    
-  }
 
   @keyframes glow {
     from {
@@ -1348,7 +1343,7 @@ p {
   }
   
   .close-button:hover {
-        color: var(--orange);
+        color: var(--title-color);
         transform: scale(1.5);
   }
 

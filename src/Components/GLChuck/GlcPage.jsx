@@ -1,8 +1,6 @@
-import PortfolioNav from "./../PortfolioNav";
 import { useEffect } from "react";
 import GlcPageTop from "./GlcPageTop";
 import GlcPageBottom from "./GlcPageBottom";
-import Nav from "../Nav";
 
 function GlcPage() {
 
