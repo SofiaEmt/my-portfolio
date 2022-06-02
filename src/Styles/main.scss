@@ -817,6 +817,7 @@ p {
     &--portfolio-version {
         width: 100%;
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23F8961EFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='4' stroke-linecap='square'/%3e%3c/svg%3e");
+    
     }
 }
 
@@ -1077,6 +1078,10 @@ p {
             align-items: center;
         }
 
+        @media screen and (max-width: 414px){
+            margin-bottom: 5vw;
+        }
+
           .row-section {
               display: flex;
               flex-direction: column;
@@ -1174,11 +1179,15 @@ p {
         align-items: center;
         flex-direction: row;
         font-size: calc(15px + 2vw);
-        padding: 2vw 0vw 4vw 4vw;
+        padding: 3vw 0vw 4vw 4vw;
 
         color: var(--title-color);
 
         gap: .5em;
+
+        @media screen and (max-width: 414px){
+            padding: 8vw 0vw 8vw 8vw;
+        }
 
         .line {
             width: 40%;
