@@ -10,6 +10,7 @@
   --link-hover: #A6CFD5;
   --tools-bg: #E9FF99;
   --tools-color: #362c69;
+  --mobile-bg: #FCFCFC;
   --nice-white: #f9f5f4;
   --nice-b: #191617;
 }
@@ -29,6 +30,12 @@ body {
   font-weight: 200;
   font-family: var(--main-font);
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    background-color: var(--mobile-bg);
+  }
 }
 
 h1 {
@@ -475,6 +482,7 @@ p {
 @media screen and (max-width: 414px) {
   .bottom-banner .bottom-banner-left {
     padding-bottom: 6vw;
+    background-color: var(--mobile-bg);
   }
 }
 
@@ -591,6 +599,12 @@ p {
 @media screen and (max-width: 1000px) {
   .bottom-banner .bottom-banner-right {
     width: 65vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .bottom-banner .bottom-banner-right {
+    background-color: var(--mobile-bg);
   }
 }
 
@@ -1087,6 +1101,12 @@ p {
   position: absolute;
   top: -0.7em;
   padding: .2em;
+}
+
+@media screen and (max-width: 414px) {
+  .wrapper .dashed-border h4 {
+    color: var(--mobile-bg) !important;
+  }
 }
 
 .wrapper .dashed-border .paragraph {

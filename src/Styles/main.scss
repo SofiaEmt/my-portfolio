@@ -12,6 +12,7 @@
     --link-hover: #A6CFD5;
     --tools-bg: #E9FF99;//#ebffa1;
     --tools-color: #362c69;
+    --mobile-bg: #FCFCFC;
 
     --nice-white: #f9f5f4;
     --nice-b: #191617;
@@ -37,6 +38,10 @@ body {
     font-weight: 200;
     font-family: var(--main-font);
     overflow-x: hidden;
+
+    @media screen and (max-width: 414px){
+        background-color: var(--mobile-bg);
+    }
 
 }
 
@@ -411,6 +416,7 @@ p {
 
         @media screen and (max-width: 414px){
             padding-bottom: 6vw;
+            background-color: var(--mobile-bg);
         }
 
         img {
@@ -508,6 +514,9 @@ p {
 
         @media screen and (max-width: 1000px){
             width: 65vw;
+        }
+        @media screen and (max-width: 414px){
+            background-color: var(--mobile-bg);
         }
 
         .img-container {
@@ -917,6 +926,10 @@ p {
             position: absolute;
             top: -0.7em;   
             padding: .2em; 
+
+            @media screen and (max-width: 414px){
+                color: var(--mobile-bg) !important;
+            }
         }
         .paragraph {
             margin: 1em;
