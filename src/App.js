@@ -7,6 +7,7 @@ import "react-icons";
 import WorkoutGenerator from "./Pages/WorkoutGenerator";
 import GHChuck from "./Pages/GHChuck";
 import TheHills from "./Pages/TheHills";
+import Sudoku from "./Pages/Sudoku";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/workout-generator" element={<WorkoutGenerator />} />
         <Route path="/good-luck-chuck" element={<GHChuck />} />
         <Route path="/the-hills" element={<TheHills />} />
+        <Route path="/sudoku-player" element={<Sudoku />} />
       </Routes>
     </>
   );

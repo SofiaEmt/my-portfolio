@@ -1101,6 +1101,28 @@ p {
               gap: 1em;
           }
 
+          .column-section {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+
+            @media screen and (max-width: 860px) {
+              flex-direction: column;
+          }
+
+          &--mobile {
+              width: 50%;
+              img {
+                  height: calc(200px + 25vw);
+                  width: auto !important;                     
+              }
+              @media screen and (max-width: 860px) {
+                  flex-direction: row;
+                  justify-content: center;
+              }
+          }
+        }
+
           .still-section {
               width: calc(200px + 25vw);
               height: auto;
